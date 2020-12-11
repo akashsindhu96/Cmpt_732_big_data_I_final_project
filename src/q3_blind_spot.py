@@ -4,18 +4,9 @@ import sys, re, math, uuid, os
 from timeit import default_timer as timer
 from cassandra.cluster import Cluster
 from math import radians, cos, sin, asin, sqrt
-from pyspark.ml.feature import StringIndexer, VectorAssembler, SQLTransformer
 
-schema = "ID STRING, Source STRING, TMC STRING, Severity STRING, Start_Time STRING, End_Time STRING, Start_Lat STRING, " \
-         "Start_Lng STRING, End_Lat STRING, End_Lng STRING, Distance(mi) STRING, Description STRING, Number STRING, " \
-         "Street STRING, Side STRING, City STRING, County STRING, State STRING, Zipcode STRING, Country STRING, " \
-         "Timezone STRING, Airport_Code STRING, Weather_Timestamp STRING, Temperature(F) STRING, Wind_Chill(F) STRING, " \
-         "Humidity(%) STRING, Pressure(in) STRING, Visibility(mi) STRING, Wind_Direction STRING, Wind_Speed(mph) STRING, " \
-         "Precipitation(in) STRING, Weather_Condition STRING, Amenity STRING, Bump STRING, Crossing STRING, Give_Way STRING, " \
-         "Junction STRING, No_Exit STRING, Railway STRING, Roundabout STRING, Station STRING,Stop STRING, Traffic_Calming STRING, " \
-         "Traffic_Signal STRING, Turning_Loop STRING, Sunrise_Sunset STRING,Civil_Twilight STRING,Nautical_Twilight STRING, " \
-         "Astronomical_Twilight STRING"
-@functions.udf()
+
+@functions.udf(returnType=StringType())
 def distance(lat, long):
     points = [] # lst for [(lat, long)]
     threshold = 10  # threshold means how long you want to see the distance b/w accidents eg. 10 equlidean distance units
@@ -70,22 +61,15 @@ def distance(lat, long):
     return str(blind_spot)
 
 
-def main(keyspace_name, input_file):
-    session = Cluster(cluster_seeds).connect()
-    session.execute("CREATE KEYSPACE IF NOT EXISTS "+keyspace_name+" WITH REPLICATION={'class':'SimpleStrategy', 'replication_factor':2}")
-    session.set_keyspace(keyspace_name)
-    session.shutdown()
+def main(input_file):
     df = spark.read.csv(input_file, sep=",", header=True)
-    # print(df.printSchema())
-
     df3 = df.select("Temperature(F)", "Humidity(%)", "Pressure(in)", "Visibility(mi)",
-              "Weather_Condition", "City", "County", "State", "Start_Time", "Sunrise_Sunset")
-    # print(df3.show(10))
+              "Weather_Condition", "City", "County", "State", "Start_Time", "Sunrise_Sunset").cache()
 
     # most number of accidents occur given city, weather_condition,sunrise_sunset.
     city_df = df3.groupBy("City", "Weather_Condition", "Sunrise_Sunset").agg(functions.count(functions.lit(1)).alias("num_accidents")).sort("num_accidents", ascending=False)
     print("Most number of accidents occur in a given city, specific weather conditions and sunrise or sunset.")
-    print(city_df.show(10))
+    city_df.write.format("com.databricks.spark.csv").save('output_city')
 
     # most number of accidents occur given city, weather_condition, sunrise_sunset, time_hourly
     # first convert the "Start_Time" to timestamp
@@ -93,7 +77,7 @@ def main(keyspace_name, input_file):
     df3 = df3.withColumn("hour", functions.hour((functions.round(functions.unix_timestamp("Start_Time")/3600)*3600).cast("timestamp")))
     city_df = df3.groupBy("City", "Weather_Condition", "Sunrise_Sunset", "hour").agg(functions.count(functions.lit(1)).alias("num_accidents")).sort("num_accidents", ascending=False)
     print("Most number of accidents occur in a given city, in a specific weather conditions, sunrise or sunset, and which hour of the day.")
-    print(city_df.show())
+    city_df.write.format("com.databricks.spark.csv").save('output_city_hr')
 
     """
     Features: City, Street, no. of accidents, Latitude, Longitude, lat's and long's which are close to eachother.
@@ -106,28 +90,19 @@ def main(keyspace_name, input_file):
     df7 = df.select("City", "Street", "Start_Lat", "Start_Lng")
     street_df = df7.groupBy("City", 'Street').agg(functions.count(functions.lit(1)).alias("no_of_accidents"),
                                                   functions.collect_list('Start_Lat').alias("Latitude_vector"),
-                                                  functions.collect_list('Start_Lng').alias("Longitude_vector")).sort("no_of_accidents", ascending=False).limit(10)
+                                                  functions.collect_list('Start_Lng').alias("Longitude_vector")).sort("no_of_accidents", ascending=False).limit(10).cache()
     blind_df = street_df.withColumn("blind_spots", distance(street_df.Latitude_vector, street_df.Longitude_vector)).drop("Latitude_vector", "Longitude_vector")
+    blind_df.write.format("com.databricks.spark.csv").save('output_accident_prone')
 
-    # latitude_df = street_df.withColumn("blind_spots", functions.col("blind_spots").cast("string"))
-    # output_df = latitude_df.withColumn("Longitude_string_lst", functions.col("Longitude_vector")
-    print(blind_df.show(10))
-
-    blind_df.write.format("com.databricks.spark.csv").save('output')
 
 
 if __name__=="__main__":
-    keyspace_name = sys.argv[1]
-    input_file = sys.argv[2]
-    # orderkeys = sys.argv[3:]
-
-    cluster_seeds = ['199.60.17.103']
-
-    spark = SparkSession.builder.appName("i dont know").config('spark.cassandra.connection.host', ','.join(cluster_seeds)).getOrCreate()
+    input_file = sys.argv[1]
+    spark = SparkSession.builder.appName("q3 and q7").getOrCreate()
     spark.sparkContext.setLogLevel("WARN")
     assert spark.version >= '2.4'
     sc = spark.sparkContext
     st = timer()
-    main(keyspace_name, input_file)
+    main(input_file)
     print("Execution time: {}".format(timer() - st))
 
