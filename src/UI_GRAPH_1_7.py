@@ -8,7 +8,6 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import numpy as np
 
-
 df = pd.read_csv('CSV_GRAPH_1_7/accidents_total_for_all_states.csv')
 lth= pd.read_csv('CSV_GRAPH_1_7/accidents_by_severity.csv')
 year_df = pd.read_csv('CSV_GRAPH_1_7/year_count.csv')
@@ -22,6 +21,7 @@ day_df = pd.read_csv('CSV_GRAPH_1_7/day_time.csv')
 houston_df = pd.read_csv('CSV_GRAPH_1_7/houston_sev.csv')
 houston_streets= pd.read_csv('CSV_GRAPH_1_7/houston_streets.csv')
 houston_features = pd.read_csv('CSV_GRAPH_1_7/houston_features.csv')
+mapbox = pd.read_csv('CSV_GRAPH_1_7/mapbox_2.csv')
 
 external_stylesheets = [dbc.themes.LUX]
 nav_item = dbc.NavItem(dbc.NavLink('GITHUB REPO',href='https://github.com/Akashsindhu/Cmpt_732_big_data_I_final_project'))
@@ -151,7 +151,6 @@ fig7.update_layout(yaxis_title='NUMBER OF ACCIDENTS',
                    template="seaborn",
                    margin=dict(t=0))
 
-
 # GRAPH 8
 # ACCIDENTS IN TOP 20 CITIES
 fig8 = go.Figure()
@@ -218,7 +217,14 @@ fig14 = px.bar(houston_features, y='type', x='count',labels={'type':'NEARYBY ROA
 fig14.update_traces(textposition='outside')
 fig14.update_layout(uniformtext_minsize=8, uniformtext_mode='hide',title_x=0.5,height=500)
 
-
+# GRAPH 15
+# ACCIDENT - PRONE SPOTS IN TOP BUSY STREETS IN US
+token = 'pk.eyJ1IjoiYmlsaDEiLCJhIjoiY2tpazR5MzM0MDZpYTJ0cW00YmM5MGFicyJ9.x-qdyysjpp-CGnICYerTkw'
+# px.set_mapbox_access_token(token)
+fig15 = px.scatter_mapbox(mapbox, lat="lat", lon="long",     color="Street",
+                  color_continuous_scale=px.colors.cyclical, zoom=3,height=600,hover_data=['City','Street','lat','long'])
+fig15.update_layout(mapbox_style="dark", mapbox_accesstoken=token)
+fig15.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 
 app.layout = html.Div([navbar,
     dbc.Container([
@@ -282,6 +288,22 @@ dbc.Row([
         dcc.Graph(figure=fig12),
         dcc.Graph(figure=fig13),
         dcc.Graph(figure=fig14),
+dbc.Row([
+            dbc.Col(dbc.Card(html.H3(children='ACCIDENT - PRONE SPOTS IN TOP BUSY STREETS IN THE STATES',
+                                     className="text-center text-light bg-dark"), body=True, color="dark")
+                    , className="mb-4")
+        ]),
+        dcc.Graph(figure=fig15),
+
+        html.Br(),
+        html.Br(),
+        html.Br(),
+
+    dbc.Row([
+            dbc.Col(dbc.Card(html.Footer(children='',
+                                     className="text-center text-light bg-dark"), body=True, color="dark")
+                    , className="mb-4")
+        ]),
 
     ]
     )
