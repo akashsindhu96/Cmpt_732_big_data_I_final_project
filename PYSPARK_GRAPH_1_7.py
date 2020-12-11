@@ -72,7 +72,10 @@ def main():
     weather_df = df.filter(df['Weather_Condition'].isNotNull())
     #FINDING THE WEATHER CONDITION WHICH CAUSED HIGHEST NUMBER OF ACCIDENTS
     weather_df = weather_df.groupBy('Weather_Condition').agg(functions.count(functions.lit(1)).alias('top_weather')).sort('top_weather',ascending=False)
-    # print(weather_df.show())
+
+
+    print(weather_df.show())
+
     top_10_weather = df.where(expr("Weather_Condition = 'Fair' or Weather_Condition= 'Clear' or Weather_Condition= 'Mostly Cloudy' or Weather_Condition= 'Overcast'"
                                    "or Weather_Condition= 'Partly Cloudy' or Weather_Condition= 'Cloudy' or Weather_Condition= 'Scattered Clouds' or Weather_Condition= 'Light Rain' "
                                    "or Weather_Condition= 'Light Snow' or Weather_Condition= 'Rain'"))
@@ -90,6 +93,7 @@ def main():
                                                                                             functions.col('year')).alias('mon_year'))
     print(top_10_weather.show())
     top_10_weather.coalesce(1).write.csv('/Users/bilalhussain/Downloads/by_month_weather.csv', header=True,mode='overwrite')
+
 
 
     # GRAPH 8
@@ -242,6 +246,7 @@ def main():
     )
     features_df.coalesce(1).write.csv('/Users/bilalhussain/Downloads/houston_features/', header=True, mode='overwrite')
     print(features_df.show())
+
 
 if __name__=="__main__":
 

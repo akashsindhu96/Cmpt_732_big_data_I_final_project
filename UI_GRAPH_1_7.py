@@ -8,6 +8,7 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import numpy as np
 
+
 df = pd.read_csv('/CSV_GRAPH_1_7/accidents_total_for_all_states.csv')
 lth= pd.read_csv('/CSV_GRAPH_1_7/accidents_by_severity.csv')
 year_df = pd.read_csv('/CSV_GRAPH_1_7/Count_by_Year.csv/year_count.csv')
@@ -150,6 +151,7 @@ fig7.update_layout(yaxis_title='NUMBER OF ACCIDENTS',
                    template="seaborn",
                    margin=dict(t=0))
 
+
 # GRAPH 8
 # ACCIDENTS IN TOP 20 CITIES
 fig8 = go.Figure()
@@ -218,7 +220,6 @@ fig14.update_layout(uniformtext_minsize=8, uniformtext_mode='hide',title_x=0.5,h
 
 
 
-
 app.layout = html.Div([navbar,
     dbc.Container([
         dbc.Row([
@@ -257,6 +258,7 @@ app.layout = html.Div([navbar,
                     className="mt-4")
         ]),
     dcc.Graph(figure=fig7),
+
         dcc.Graph(figure=fig8),
 
 
@@ -280,6 +282,7 @@ dbc.Row([
         dcc.Graph(figure=fig12),
         dcc.Graph(figure=fig13),
         dcc.Graph(figure=fig14),
+
     ]
     )
 ])
