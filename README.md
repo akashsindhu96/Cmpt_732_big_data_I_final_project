@@ -28,10 +28,11 @@ This project focuses on understanding the accident trends in the United States f
 - Bilal Hussain
 - Sakina Patanwala
 
-## Demo
-
-
 ## Notes
 This project is submitted as the final project for CMPT 732: Programming for Big Data Lab 1.
 - Code running instructions can be found in RUNNING.MD
 - Project details can be found in report.pdf
+
+# Demo
+- Live demo for the UI Design can be found at:
+- Video for the project can be found at:
