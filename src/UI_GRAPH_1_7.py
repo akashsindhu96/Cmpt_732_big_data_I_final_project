@@ -264,6 +264,7 @@ app.layout = html.Div([navbar,
                     className="mt-4")
         ]),
     dcc.Graph(figure=fig7),
+
         dcc.Graph(figure=fig8),
 
 
@@ -303,9 +304,6 @@ dbc.Row([
                                      className="text-center text-light bg-dark"), body=True, color="dark")
                     , className="mb-4")
         ]),
-
-
-
 
     ]
     )
