@@ -4,14 +4,21 @@ This project focuses on understanding the accident trends in the United States f
 
 ### Features
 
-1. Calculate the severity of the automobile accident wrt street name or area?  
-2. number of accidents that happened because of low visibility in which kind of areas-----conclusion that which kind of areas have a saturation of it----use lat and longs  
-3. which weather conditions are not suitable for driving at which time of the day and in which places and how much % of accidents occured in that timeframe. How many number of accidents occurred at which time of the day, weather condition, and place?  
-4. Find if there is a correlation between distance, duration and severity of the accident?  
-5. use start and end times of the accident and figure out which areas are the fastest at sorting out accidents and are the most efficient  
-6. which place in each state has the least and most accidents in an hour, day, month, year and total period of the dataset  
-7. Which top 10 street and city has most number of accidents in US, given the latitude and longitude we can find out the distance between two accidents. If they are closer to each other compared to a threshold distance then we can find out their exact locations. Here we are considering if within a threshold distance 3 accidents happened, that location is either a blind spot or accident prone.  
-
+- Most and least accident-prone states in the US
+- Accident count per state using severities from low to high in the US
+- Accident count per year in the US
+- Accident count per month of the year in the US
+- Accident count per day of the week in the US
+- Accident count by the hour of the day in the US
+- Accidents caused by different weather conditions in different months of the years in the US
+- Aggregated monthly accident count in the top twenty cities in the US
+- Accidents caused by the severity of levels one and two due to low visibility in the US
+- Accidents caused by the severity of levels three and four due to low visibility in the US
+- Accidents caused by different weather conditions at various times of the day in Houston
+- Accidents caused by different severity levels at various times of the day in Houston
+- Twenty most accident-prone streets in Houston
+- Accident count due to nearby road features in Houston
+- Accident-prone areas in hundred most busy streets in the US
 
 ### Directory Structure
 
@@ -23,16 +30,7 @@ This project focuses on understanding the accident trends in the United States f
     |-- src                           # CSV files and code
     |    |-- csv_files                      # 16 CSV files generated after running the pyspark code 
          |-- code files(.py)                # python files for generating (.csv) files and the UI
-    |-- .gitignore                    # dataset for the project
     |__ README.md                     # repository's readme
-         
-    
-
-### Contributors
-
-- Akash Sindhu
-- Bilal Hussain
-- Sakina Patanwala
 
 ### Notes
 This project is submitted as the final project for CMPT 732: Programming for Big Data Lab 1.
@@ -40,5 +38,11 @@ This project is submitted as the final project for CMPT 732: Programming for Big
 - Project details can be found in report.pdf
 
 ### Demo
-- Live demo for the UI Design can be found at:
+- Live demo for UI Design can be found at: https://usa-accidents.herokuapp.com/
 - Video for the project can be found at:
+
+#### Contributors
+
+- Akash Sindhu
+- Bilal Hussain
+- Sakina Patanwala
