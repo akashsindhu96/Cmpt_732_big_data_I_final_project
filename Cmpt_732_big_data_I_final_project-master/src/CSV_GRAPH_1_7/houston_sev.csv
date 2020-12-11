@@ -1,0 +1,25 @@
+City,Severity,hour,total_acc_per_Sev
+Houston,4,Late Morning,160
+Houston,1,Early Afternoon,11
+Houston,3,Late Morning,4417
+Houston,1,Late Afternoon,5
+Houston,2,Early Evening,9157
+Houston,4,Late Afternoon,86
+Houston,2,Early Morning,17212
+Houston,1,Late Morning,9
+Houston,3,Early Morning,4395
+Houston,4,Early Morning,161
+Houston,2,Night,5161
+Houston,4,Early Evening,92
+Houston,2,Late Afternoon,8472
+Houston,1,Night,1
+Houston,1,Early Morning,18
+Houston,2,Late Morning,27031
+Houston,4,Night,294
+Houston,3,Late Afternoon,3551
+Houston,2,Early Afternoon,10944
+Houston,3,Early Evening,4220
+Houston,3,Early Afternoon,3577
+Houston,4,Early Afternoon,114
+Houston,3,Night,2145
+Houston,1,Early Evening,7
