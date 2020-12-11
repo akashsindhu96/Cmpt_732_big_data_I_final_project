@@ -91,6 +91,7 @@ def main(input_file):
     street_df = df7.groupBy("City", 'Street').agg(functions.count(functions.lit(1)).alias("no_of_accidents"),
                                                   functions.collect_list('Start_Lat').alias("Latitude_vector"),
                                                   functions.collect_list('Start_Lng').alias("Longitude_vector")).sort("no_of_accidents", ascending=False).limit(100).cache()
+
     blind_df = street_df.withColumn("blind_spots", distance(street_df.Latitude_vector, street_df.Longitude_vector)).drop("Latitude_vector", "Longitude_vector")
     blind_df.write.format("com.databricks.spark.csv").save('output_accident_prone')
 
