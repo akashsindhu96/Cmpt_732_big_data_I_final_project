@@ -1,0 +1,117 @@
+City,Weather_Condition,hour,num_accidents
+Houston,Clear,Late Morning,7527
+Houston,Mostly Cloudy,Late Morning,5504
+Houston,Clear,Early Morning,5318
+Houston,Overcast,Late Morning,4669
+Houston,Partly Cloudy,Late Morning,4382
+Houston,Clear,Early Evening,4214
+Houston,Overcast,Early Morning,3682
+Houston,Clear,Early Afternoon,3326
+Houston,Mostly Cloudy,Early Morning,3247
+Houston,Mostly Cloudy,Early Afternoon,3013
+Houston,Clear,Late Afternoon,2882
+Houston,Scattered Clouds,Late Morning,2674
+Houston,Clear,Night,2579
+Houston,Mostly Cloudy,Late Afternoon,2562
+Houston,Mostly Cloudy,Early Evening,2394
+Houston,Partly Cloudy,Early Morning,2280
+Houston,Partly Cloudy,Early Afternoon,2232
+Houston,Fair,Late Morning,2231
+Houston,Overcast,Early Evening,2048
+Houston,Fair,Early Morning,1937
+Houston,Overcast,Early Afternoon,1821
+Houston,Scattered Clouds,Early Afternoon,1793
+Houston,Partly Cloudy,Late Afternoon,1725
+Houston,Cloudy,Late Morning,1589
+Houston,Partly Cloudy,Early Evening,1567
+Houston,Overcast,Late Afternoon,1526
+Houston,Cloudy,Early Morning,1398
+Houston,Scattered Clouds,Late Afternoon,1319
+Houston,Scattered Clouds,Early Morning,1282
+Houston,Overcast,Night,1240
+Houston,Mostly Cloudy,Night,1114
+Houston,Scattered Clouds,Early Evening,1093
+Houston,Fair,Early Evening,852
+Houston,Light Rain,Late Morning,839
+Houston,Partly Cloudy,Night,793
+Houston,Light Rain,Early Morning,671
+Houston,Fog,Early Morning,647
+Houston,Fair,Night,620
+Houston,Fair,Late Afternoon,569
+Houston,Fair,Early Afternoon,567
+Houston,Haze,Late Morning,435
+Houston,Cloudy,Early Evening,420
+Houston,Cloudy,Late Afternoon,413
+Houston,Scattered Clouds,Night,400
+Houston,Light Rain,Early Afternoon,387
+Houston,Cloudy,Early Afternoon,382
+Houston,Fog,Late Morning,354
+Houston,Cloudy,Night,286
+Houston,Light Rain,Late Afternoon,263
+Houston,Light Rain,Early Evening,198
+Houston,Rain,Late Morning,189
+Houston,Haze,Early Afternoon,160
+Houston,Haze,Early Morning,159
+Houston,Haze,Late Afternoon,158
+Houston,Light Rain,Night,152
+Houston,Haze,Early Evening,129
+Houston,Rain,Early Morning,126
+Houston,Shallow Fog,Early Morning,124
+Houston,Heavy Rain,Early Morning,116
+Houston,Fog,Night,98
+Houston,Heavy Rain,Late Morning,86
+Houston,Rain,Early Afternoon,76
+Houston,Light Drizzle,Early Morning,73
+Houston,Cloudy / Windy,Late Morning,62
+Houston,Thunderstorm,Early Afternoon,58
+Houston,Mostly Cloudy / Windy,Early Afternoon,56
+Houston,Thunderstorm,Late Afternoon,53
+Houston,Fog,Early Afternoon,49
+Houston,Rain,Late Afternoon,49
+Houston,Mostly Cloudy / Windy,Late Morning,44
+Houston,Fog,Early Evening,38
+Houston,Thunder,Late Afternoon,38
+Houston,Partly Cloudy / Windy,Late Morning,38
+Houston,Rain,Early Evening,37
+Houston,Light Drizzle,Late Morning,36
+Houston,Thunder,Early Afternoon,36
+Houston,Mostly Cloudy / Windy,Late Afternoon,35
+Houston,Fair / Windy,Late Morning,34
+Houston,Heavy Rain,Early Afternoon,31
+Houston,Thunderstorm,Late Morning,30
+Houston,Thunderstorm,Early Evening,28
+Houston,Heavy Rain,Late Afternoon,28
+Houston,Fair / Windy,Early Afternoon,24
+Houston,Haze,Night,21
+Houston,Thunder,Late Morning,20
+Houston,Fog,Late Afternoon,20
+Houston,Cloudy / Windy,Early Morning,20
+Houston,Partly Cloudy / Windy,Early Afternoon,19
+Houston,Heavy Rain,Early Evening,18
+Houston,Fair / Windy,Late Afternoon,17
+Houston,Cloudy / Windy,Early Afternoon,16
+Houston,Heavy Rain,Night,16
+Houston,Light Drizzle,Night,15
+Houston,Partly Cloudy / Windy,Early Morning,15
+Houston,Thunder,Early Evening,14
+Houston,Rain,Night,13
+Houston,Shallow Fog,Night,12
+Houston,Thunderstorm,Early Morning,11
+Houston,Thunder,Early Morning,11
+Houston,Partly Cloudy / Windy,Early Evening,11
+Houston,Cloudy / Windy,Early Evening,10
+Houston,Thunderstorm,Night,9
+Houston,Mostly Cloudy / Windy,Early Evening,8
+Houston,Fair / Windy,Early Evening,7
+Houston,Cloudy / Windy,Late Afternoon,7
+Houston,Fair / Windy,Early Morning,7
+Houston,Mostly Cloudy / Windy,Early Morning,5
+Houston,Thunder,Night,5
+Houston,Light Drizzle,Early Evening,5
+Houston,Partly Cloudy / Windy,Late Afternoon,5
+Houston,Light Drizzle,Late Afternoon,4
+Houston,Cloudy / Windy,Night,4
+Houston,Mostly Cloudy / Windy,Night,3
+Houston,Light Drizzle,Early Afternoon,3
+Houston,Shallow Fog,Early Evening,1
+Houston,Partly Cloudy / Windy,Night,1

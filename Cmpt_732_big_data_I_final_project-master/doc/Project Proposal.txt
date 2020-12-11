@@ -1,0 +1,26 @@
+October 23rd, 2020
+Final Project: CMPT 732 (Programming for Big Data 1)
+Project Title: US Accidents: A Countrywide Traffic Accident Dataset Analysis 
+Team Members: Akash Sindhu, Bilal Hussain, Sakina Patanwala
+
+REVISED PROJECT PROPOSAL
+
+Description: 
+
+a) Analysis of a dataset from different data sources.
+b) Importing dataset as a CSV file using PySpark and analyzing the data.
+c) Using queries on the data for extracting accident trends and performing ETL alongside.
+d) Preparing a UI Layout in Dash and making an user-interactive userface.
+
+Technologies:
+
+a) Using PySpark dataframes and pandas libraries for coding in Python.
+b) Dash plotly for visualizing existing data and present as a webpage.
+
+Dataset:
+
+a) US Accidents (3.5 million records): A Countrywide Traffic Accident Dataset (2016 - 2020)
+Link: https://www.kaggle.com/sobhanmoosavi/us-accidents 
+
+
+
