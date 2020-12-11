@@ -9,7 +9,7 @@ STEP 0: Create a virtual environment with Anaconda and install all the libraries
 STEP 1: Compilation steps for producing dataframes for generating csv files
 
 Step 1: PART A:
-- Download the Kaggle Datset from "https://www.kaggle.com/sobhanmoosavi/us-accidents" or navigate in "src" to "Kaggle_US.csv" in the github repository
+- Download the Kaggle Datset from "https://www.kaggle.com/sobhanmoosavi/us-accidents" or nagigate to the path in ".gitignore" in the github repository
 - Navigate in the "src" directory and use python files "PYSPARK_GRAPH_1_7.py" and "q3_blind_spot.py" for compilation
 - Use commands "spark-submit PYSPARK_GRAPH_1_7.py <path for dataset> <output path>" and "spark-submit q3_blind_spot.py <path for dataset>" respectively
 - For example: "spark-submit PYSPARK_GRAPH_1_7.py /Users/patan/Desktop/Kaggle_us.csv /Users/patan/Desktop/Plots" and "spark-submit q3_blind_spot.py /Users/patan/Desktop/Kaggle_us.csv"
