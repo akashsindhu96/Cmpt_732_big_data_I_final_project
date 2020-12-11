@@ -15,12 +15,18 @@ This project focuses on understanding the accident trends in the United States f
 
 ### Directory Structure
 
-    .                               
-    ├── src                               # Source files 
-    ├── doc                               # Project proposal, Report, Presentation
-    │   ├── figs                              # Figures
-        ├── csv_files                         # CSV files used for plotting
-    └── README.md
+    .
+    |-- doc                           # Project report(.pdf), project proposal(.txt) and figures(.png)
+    |    |-- figs                           # Expected 15 output graphs on Dash(UI)
+              |-- Visual Graphs                    # 15 (.png) files       
+         |-- Project Proposal               # Proposed project proposal
+    |-- src                           # CSV files and code
+    |    |-- csv_files                      # 16 CSV files generated after running the pyspark code 
+         |-- code files(.py)                # python files for generating (.csv) files and the UI
+    |-- .gitignore                    # dataset for the project
+    |__ README.md                     # repository's readme
+         
+    
 
 ### Contributors
 
