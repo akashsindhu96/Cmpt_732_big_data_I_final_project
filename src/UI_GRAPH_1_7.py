@@ -9,19 +9,19 @@ from plotly.subplots import make_subplots
 import numpy as np
 
 
-df = pd.read_csv('doc/CSV_GRAPH_1_7/accidents_by_severity.csv')
-lth= pd.read_csv('/Cmpt_732_big_data_I_final_project/doc/CSV_GRAPH_1_7/accidents_by_severity.csv')
-year_df = pd.read_csv('/Cmpt_732_big_data_I_final_project/doc/CSV_GRAPH_1_7/year_count.csv')
-month_df = pd.read_csv('/Cmpt_732_big_data_I_final_project/doc/CSV_GRAPH_1_7/accidents_month.csv')
-weekday_df = pd.read_csv('/Cmpt_732_big_data_I_final_project/doc/CSV_GRAPH_1_7/week_days_count.csv')
-hour_df = pd.read_csv('/Cmpt_732_big_data_I_final_project/doc/CSV_GRAPH_1_7/count_hour.csv')
-weather_df = pd.read_csv('/Cmpt_732_big_data_I_final_project/doc/CSV_GRAPH_1_7/weather_month.csv')
-cities_df = pd.read_csv('/Cmpt_732_big_data_I_final_project/doc/CSV_GRAPH_1_7/top_cities.csv')
-hl_df = pd.read_csv('/Cmpt_732_big_data_I_final_project/doc/CSV_GRAPH_1_7/l_h_visibility.csv')
-day_df = pd.read_csv('/Cmpt_732_big_data_I_final_project/doc/CSV_GRAPH_1_7/day_time.csv')
-houston_df = pd.read_csv('/Cmpt_732_big_data_I_final_project/doc/CSV_GRAPH_1_7/houston_sev.csv')
-houston_streets= pd.read_csv('/Cmpt_732_big_data_I_final_project/doc/CSV_GRAPH_1_7/houston_streets.csv')
-houston_features = pd.read_csv('/Cmpt_732_big_data_I_final_project/doc/CSV_GRAPH_1_7/houston_features.csv')
+df = pd.read_csv('CSV_GRAPH_1_7/accidents_total_for_all_states.csv')
+lth= pd.read_csv('CSV_GRAPH_1_7/accidents_by_severity.csv')
+year_df = pd.read_csv('CSV_GRAPH_1_7/year_count.csv')
+month_df = pd.read_csv('CSV_GRAPH_1_7/accidents_month.csv')
+weekday_df = pd.read_csv('CSV_GRAPH_1_7/week_days_count.csv')
+hour_df = pd.read_csv('CSV_GRAPH_1_7/count_hour.csv')
+weather_df = pd.read_csv('CSV_GRAPH_1_7/weather_month.csv')
+cities_df = pd.read_csv('CSV_GRAPH_1_7/top_cities.csv')
+hl_df = pd.read_csv('CSV_GRAPH_1_7/l_h_visibility.csv')
+day_df = pd.read_csv('CSV_GRAPH_1_7/day_time.csv')
+houston_df = pd.read_csv('CSV_GRAPH_1_7/houston_sev.csv')
+houston_streets= pd.read_csv('CSV_GRAPH_1_7/houston_streets.csv')
+houston_features = pd.read_csv('CSV_GRAPH_1_7/houston_features.csv')
 
 external_stylesheets = [dbc.themes.LUX]
 nav_item = dbc.NavItem(dbc.NavLink('GITHUB REPO',href='https://github.com/Akashsindhu/Cmpt_732_big_data_I_final_project'))
