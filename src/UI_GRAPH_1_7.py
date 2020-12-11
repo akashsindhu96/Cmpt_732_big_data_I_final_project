@@ -8,20 +8,20 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import numpy as np
 
-df = pd.read_csv('CSV_GRAPH_1_7/accidents_total_for_all_states.csv')
-lth= pd.read_csv('CSV_GRAPH_1_7/accidents_by_severity.csv')
-year_df = pd.read_csv('CSV_GRAPH_1_7/year_count.csv')
-month_df = pd.read_csv('CSV_GRAPH_1_7/accidents_month.csv')
-weekday_df = pd.read_csv('CSV_GRAPH_1_7/week_days_count.csv')
-hour_df = pd.read_csv('CSV_GRAPH_1_7/count_hour.csv')
-weather_df = pd.read_csv('CSV_GRAPH_1_7/weather_month.csv')
-cities_df = pd.read_csv('CSV_GRAPH_1_7/top_cities.csv')
-hl_df = pd.read_csv('CSV_GRAPH_1_7/l_h_visibility.csv')
-day_df = pd.read_csv('CSV_GRAPH_1_7/day_time.csv')
-houston_df = pd.read_csv('CSV_GRAPH_1_7/houston_sev.csv')
-houston_streets= pd.read_csv('CSV_GRAPH_1_7/houston_streets.csv')
-houston_features = pd.read_csv('CSV_GRAPH_1_7/houston_features.csv')
-mapbox = pd.read_csv('CSV_GRAPH_1_7/mapbox_2.csv')
+df = pd.read_csv('CSV_GRAPH_1_7/accidents_total_for_all_states.csv') # graph 1
+lth= pd.read_csv('CSV_GRAPH_1_7/accidents_by_severity.csv') # graph 2
+year_df = pd.read_csv('CSV_GRAPH_1_7/year_count.csv') # graph 3
+month_df = pd.read_csv('CSV_GRAPH_1_7/accidents_month.csv') # graph 4
+weekday_df = pd.read_csv('CSV_GRAPH_1_7/week_days_count.csv') # graph 5
+hour_df = pd.read_csv('CSV_GRAPH_1_7/count_hour.csv') # graph 6
+weather_df = pd.read_csv('CSV_GRAPH_1_7/weather_month.csv') # graph 7
+cities_df = pd.read_csv('CSV_GRAPH_1_7/top_cities.csv') # graph 8
+hl_df = pd.read_csv('CSV_GRAPH_1_7/l_h_visibility.csv') # graph 9 and graph 10
+day_df = pd.read_csv('CSV_GRAPH_1_7/day_time.csv') # graph 11
+houston_df = pd.read_csv('CSV_GRAPH_1_7/houston_sev.csv') # graph 12
+houston_streets= pd.read_csv('CSV_GRAPH_1_7/houston_streets.csv') # graph 13
+houston_features = pd.read_csv('CSV_GRAPH_1_7/houston_features.csv') # graph 14
+mapbox = pd.read_csv('CSV_GRAPH_1_7/mapbox_2.csv') # graph 15
 
 external_stylesheets = [dbc.themes.LUX]
 nav_item = dbc.NavItem(dbc.NavLink('GITHUB REPO',href='https://github.com/Akashsindhu/Cmpt_732_big_data_I_final_project'))
