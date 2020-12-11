@@ -1,0 +1,43 @@
+October 23rd, 2020
+Final Project: CMPT 732 (Programming for Big Data 1)
+Team Members: Akash Sindhu, Bilal Hussain, Sakina Patanwala
+
+PROJECT PROPOSAL
+
+Description: 
+
+a) Streaming of large datasets from different data sources.
+b) Storing the data in the database.
+c) Using queries on the data while streaming it from the database and performing ETL alongside.
+
+Technologies:
+
+a) Spark Streaming to handle a continuous stream of live data in almost-real-time using spark 2.2 constructed streaming. 
+b) SQL or NOSQL databases such as Hive, Cassandra and Elastic Search respectively.
+c) Dash for visualizing existing data and present as a webpage.
+
+Datasets:
+
+a) US Accidents (3.5 million records): A Countrywide Traffic Accident Dataset (2016 - 2020)
+Link: https://www.kaggle.com/sobhanmoosavi/us-accidents - 1GB
+Take a chunk from the dataset --about 20% of it to create a smaller dataset for testing
+b) https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95 - provides API for streaming
+
+Features to include if time permits:
+
+a) Use of Spark Machine learning.
+
+
+1. Black spots 
+2. Nearest intersection 
+3. cause of road accident
+4. location of road accident - municipality, street, house number, traffic direction, lane type, road type, road number and stationing
+5. the distinction between rural and urban areas
+
+What we can type in conclusion
+Conclusion
+GPS is an essential element in the future of Intelligent Transportation Systems (ITS). ITS encompasses a broad range of communications-based information and electronics technologies. 
+
+With the continuous modernization of GPS, we can expect even more effective systems for crash prevention, distress alerts and position notification, electronic mapping, and in-vehicle navigation with audible instructions. 
+
+The benefits of less fuel consumption and congestion also directly contribute toward reductions in carbon dioxide (CO2) emissions, thereby having a positive effect on the environment
