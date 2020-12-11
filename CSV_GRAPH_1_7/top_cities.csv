@@ -1,0 +1,241 @@
+month,City,total_acc
+January,Miami,2918
+January,Houston,9568
+January,Richmond,1790
+January,Dallas,5362
+January,San Antonio,1982
+January,Raleigh,3718
+January,Austin,4966
+January,Charlotte,6361
+January,Nashville,2628
+January,San Jose,1880
+January,Baton Rouge,2600
+January,Orlando,2089
+January,Seattle,1955
+January,Atlanta,3722
+January,Oklahoma City,2923
+January,Sacramento,2827
+January,Los Angeles,6701
+January,Minneapolis,3424
+January,San Diego,2159
+January,Phoenix,2465
+February,Seattle,1644
+February,Raleigh,3760
+February,San Diego,2081
+February,San Jose,1638
+February,Oklahoma City,2586
+February,Austin,5066
+February,Charlotte,5800
+February,San Antonio,1913
+February,Orlando,2072
+February,Richmond,1573
+February,Atlanta,3493
+February,Miami,2730
+February,Minneapolis,2751
+February,Sacramento,2745
+February,Baton Rouge,2231
+February,Nashville,2793
+February,Houston,8543
+February,Los Angeles,6219
+February,Phoenix,2092
+February,Dallas,5125
+March,Austin,5051
+March,Seattle,1839
+March,San Antonio,1981
+March,Houston,8047
+March,San Jose,2004
+March,Atlanta,3291
+March,Nashville,2586
+March,Miami,2886
+March,Orlando,2677
+March,Minneapolis,1961
+March,Charlotte,6881
+March,San Diego,2389
+March,Baton Rouge,2775
+March,Sacramento,3068
+March,Los Angeles,7003
+March,Raleigh,3423
+March,Dallas,5301
+March,Oklahoma City,2749
+March,Phoenix,2276
+March,Richmond,1922
+April,Orlando,2355
+April,Oklahoma City,3149
+April,San Diego,2307
+April,Phoenix,2373
+April,San Jose,1961
+April,Baton Rouge,2745
+April,Minneapolis,1735
+April,Austin,4919
+April,Raleigh,4438
+April,Sacramento,3387
+April,San Antonio,1931
+April,Dallas,5039
+April,Atlanta,2676
+April,Nashville,3075
+April,Los Angeles,7320
+April,Houston,7910
+April,Seattle,1715
+April,Miami,2451
+April,Richmond,2729
+April,Charlotte,7417
+May,Houston,7447
+May,San Antonio,1748
+May,Orlando,2219
+May,Richmond,2187
+May,Minneapolis,1687
+May,Raleigh,2974
+May,Atlanta,2922
+May,San Jose,1822
+May,Seattle,1987
+May,Los Angeles,6889
+May,Miami,2729
+May,San Diego,2113
+May,Nashville,3078
+May,Oklahoma City,3603
+May,Dallas,4612
+May,Baton Rouge,3003
+May,Sacramento,2923
+May,Austin,4425
+May,Phoenix,2750
+May,Charlotte,7425
+June,Austin,5053
+June,San Antonio,1788
+June,San Diego,2243
+June,Atlanta,3742
+June,Richmond,1885
+June,Los Angeles,7623
+June,Minneapolis,1868
+June,Miami,2871
+June,Oklahoma City,3279
+June,San Jose,1663
+June,Nashville,3027
+June,Dallas,5241
+June,Raleigh,2614
+June,Phoenix,2704
+June,Baton Rouge,2535
+June,Sacramento,2935
+June,Orlando,2610
+June,Charlotte,6698
+June,Seattle,2673
+June,Houston,7607
+July,Miami,2610
+July,San Diego,1589
+July,Austin,5086
+July,Los Angeles,5217
+July,Raleigh,2515
+July,Sacramento,1583
+July,Dallas,4803
+July,Charlotte,4647
+July,Baton Rouge,1941
+July,Houston,7168
+July,Minneapolis,1410
+July,San Jose,1129
+July,Seattle,2627
+July,San Antonio,1897
+July,Phoenix,1758
+July,Richmond,1327
+July,Nashville,1745
+July,Oklahoma City,2401
+July,Atlanta,2899
+July,Orlando,2320
+August,Austin,6179
+August,Raleigh,4261
+August,Atlanta,3836
+August,Oklahoma City,3637
+August,San Antonio,2364
+August,Richmond,1813
+August,San Diego,1782
+August,San Jose,1518
+August,Los Angeles,5582
+August,Nashville,3481
+August,Sacramento,2108
+August,Dallas,5651
+August,Seattle,2178
+August,Baton Rouge,3915
+August,Charlotte,7073
+August,Orlando,3201
+August,Houston,8854
+August,Phoenix,2774
+August,Minneapolis,2041
+August,Miami,3497
+September,Nashville,3113
+September,Sacramento,3123
+September,Minneapolis,1809
+September,Phoenix,2392
+September,Austin,5785
+September,Houston,7948
+September,San Antonio,2215
+September,Orlando,2483
+September,Los Angeles,6623
+September,Dallas,6214
+September,San Jose,1899
+September,Seattle,2287
+September,Charlotte,6167
+September,Atlanta,3175
+September,Miami,2566
+September,San Diego,2290
+September,Baton Rouge,3802
+September,Oklahoma City,3099
+September,Richmond,2037
+September,Raleigh,3901
+October,San Antonio,2125
+October,Los Angeles,7435
+October,Charlotte,7614
+October,Raleigh,4880
+October,San Diego,2325
+October,Seattle,2604
+October,Richmond,2753
+October,Baton Rouge,3062
+October,Phoenix,2275
+October,San Jose,1984
+October,Minneapolis,2623
+October,Miami,3124
+October,Nashville,2489
+October,Dallas,6006
+October,Houston,9214
+October,Atlanta,4025
+October,Sacramento,2979
+October,Oklahoma City,3089
+October,Orlando,2534
+October,Austin,6390
+November,Los Angeles,6033
+November,Seattle,2358
+November,San Diego,1937
+November,Houston,10090
+November,Raleigh,4368
+November,Oklahoma City,2988
+November,Sacramento,2204
+November,Miami,3107
+November,Baton Rouge,2955
+November,Austin,5703
+November,Charlotte,6965
+November,San Jose,1588
+November,Richmond,2059
+November,Atlanta,3798
+November,Dallas,5676
+November,Nashville,2501
+November,Orlando,2571
+November,Minneapolis,2273
+November,Phoenix,2451
+November,San Antonio,2543
+December,Orlando,2141
+December,Sacramento,2779
+December,Los Angeles,6524
+December,Minneapolis,3148
+December,Atlanta,3547
+December,Nashville,2403
+December,San Diego,2312
+December,San Jose,1637
+December,Seattle,2189
+December,Austin,5266
+December,Houston,8844
+December,Phoenix,2270
+December,Baton Rouge,2526
+December,Miami,3060
+December,Dallas,5760
+December,Raleigh,3823
+December,Richmond,1827
+December,Charlotte,5904
+December,Oklahoma City,2837
+December,San Antonio,2027
