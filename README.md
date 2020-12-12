@@ -42,7 +42,6 @@ This project is submitted as the final project for CMPT 732: Programming for Big
 
 ### Demo
 - Live demo for UI Design can be found at: https://usa-accidents.herokuapp.com/
-- Video for the project can be found at:
 
 #### Contributors
 
