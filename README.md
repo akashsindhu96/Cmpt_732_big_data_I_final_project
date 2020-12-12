@@ -27,10 +27,13 @@ This project focuses on understanding the accident trends in the United States f
     |    |-- figs                           # Expected 15 output graphs on Dash(UI)
               |-- Visual Graphs                    # 15 (.png) files       
          |-- Project Proposal               # Proposed project proposal
+         |-- Project Report                 # Project Report
     |-- src                           # CSV files and code
     |    |-- csv_files                      # 16 CSV files generated after running the pyspark code 
          |-- code files(.py)                # python files for generating (.csv) files and the UI
-    |__ README.md                     # repository's readme
+         |-- requirements.txt               # libraries required for compiling the project
+    |-- README.md                     # repository's readme
+    |__ RUNNING.MD                    # instructions on running the project
 
 ### Notes
 This project is submitted as the final project for CMPT 732: Programming for Big Data Lab 1.
