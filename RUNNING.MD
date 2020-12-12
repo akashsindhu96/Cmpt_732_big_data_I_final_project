@@ -28,6 +28,6 @@ Step 1: PART B:
 - Provide the path of the (.csv) file from `q3_blind_spot.py` as an input file to `blind_spot_lat_long_extraction.py` which will in return produce a (.csv) file for usage in "STEP 2"
 
 STEP 2: Compilation steps for producing UI:
-- Compile by using Command Prompt using command "python UI_GRAPH_1_7.py"
+- Compile by using Command Prompt using command `python UI_GRAPH_1_7.py`
 
 - It will show the localhost, you can acess the Web based UI from there or click [here](https://usa-accidents.herokuapp.com/)
